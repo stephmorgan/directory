@@ -125,7 +125,7 @@ padding: 4px 10px;
 }
 
 .detail-image{
-  width: 90%;
+  width: 100%;
 }
 
 .detail-image-title{
@@ -148,7 +148,7 @@ padding: 4px 10px;
 }
 
 .hidden-detail .thumbnail-item{
-  max-width: 80%
+  max-width: 80%;
 }
 
 @media all and (min-width: 768px){
