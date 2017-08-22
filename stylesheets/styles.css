@@ -90,8 +90,7 @@ a{
 }
 
 .thumbnail-image{
-  display: block;
-  width:100%;
+  max-width:100%;
 }
 
 .thumbnail-title {
@@ -113,8 +112,11 @@ padding: 4px 10px;
 }
 
 .detail-image-frame{
+  flex: 1 1 auto;
+  display: block;
   position: relative;
   text-align: center;
+  max-width: 40%;
 
   transition: transform 333ms cubic-bezier(1,.06,.28,1);
 }
