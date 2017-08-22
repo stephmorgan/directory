@@ -139,15 +139,6 @@ padding: 4px 10px;
   font-size: 40px;
 }
 
-.detail-list{
-  list-style: none;
-  padding-left: 0;
-}
-
-.detail-info-container{
-  display: none;
-}
-
 .hidden-detail .detail-image-container{
   display: none;
 }
@@ -167,25 +158,6 @@ padding: 4px 10px;
     overflow: hidden;
   }
 
-.detail-image-container{
-  width: 60%;
-  margin-bottom: 20px;
-}
-
-.detail-info-container{
-  display: block;
-  color: white;
-  font-size: 20px;
-}
-
-  .detail-list{
-    flex: 1 1 auto;
-    display: flex;
-    flex-direction: column;
-    list-style: none;
-    overflow-y: scroll;
-  }
-
   .thumbnail-list{
     flex-direction: column;
     order:0;
@@ -201,5 +173,4 @@ padding: 4px 10px;
   .thumbnail-item + .thumbnail-item{
     margin-top: 20px;
   }
-
 }

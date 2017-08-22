@@ -1,22 +1,19 @@
 var DETAIL_IMAGE_SELECTOR = '[data-image-role="target"]';
 var DETAIL_TITLE_SELECTOR = '[data-image-role="title"]';
 var DETAIL_FRAME_SELECTOR = '[data-image-role="frame"]';
-var DETAIL_INFO_SELECTOR = '[data-image-role="info"]';
+var DETAIL_FAMILY_NAMES_SELECTOR = '[data-image-role="family-name"]'
 var THUMBNAIL_LINK_SELECTOR = '[data-image-role="trigger"]';
 var HIDDEN_DETAIL_CLASS = 'hidden-detail';
 var TINY_EFFECT_CLASS = 'is-tiny';
 var ESC_KEY = 27;
 
-function setDetails(imageURL, titleText, infoText) {
+function setDetails(imageURL, titleText) {
   'use strict';
   var detailImage = document.querySelector(DETAIL_IMAGE_SELECTOR);
   detailImage.setAttribute('src',imageURL);
 
   var detailTitle = document.querySelector(DETAIL_TITLE_SELECTOR);
   detailTitle.textContent = titleText;
-
-  var detailInfo = document.querySelector(DETAIL_INFO_SELECTOR);
-  detailInfo.textContent = infoText;
 }
 
 function imageFromThumb(thumbnail){
@@ -29,14 +26,9 @@ function titleFromThumb(thumbnail){
   return thumbnail.getAttribute('data-image-title');
 }
 
-function infoFromThumb(thumbnail){
-  'use strict';
-  return thumbnail.getAttribute('data-image-info');
-}
-
 function setDetailsFromThumb(thumbnail){
   'use strict';
-  setDetails(imageFromThumb(thumbnail), titleFromThumb(thumbnail), infoFromThumb(thumbnail));
+  setDetails(imageFromThumb(thumbnail), titleFromThumb(thumbnail));
 }
 
 function addThumbClickHandler(thumb){
