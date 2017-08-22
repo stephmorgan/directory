@@ -116,7 +116,6 @@ padding: 4px 10px;
   display: block;
   position: relative;
   text-align: center;
-  max-width: 40%;
 
   transition: transform 333ms cubic-bezier(1,.06,.28,1);
 }
