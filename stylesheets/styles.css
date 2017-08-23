@@ -168,4 +168,8 @@ padding: 4px 10px;
   .thumbnail-item + .thumbnail-item{
     margin-top: 20px;
   }
+
+  .detail-image-container{
+    max-width: 50%;
+  }
 }
